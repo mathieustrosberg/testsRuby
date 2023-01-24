@@ -1,3 +1,5 @@
 def time_string(num)
-    return "%02d:%02d:%02d" % [num / 3600, num / 60 % 60, num % 60]
-  end
+    time = Time.at(num)
+    formatted_time = time.utc.strftime("%H:%M:%S")
+    return formatted_time
+end
