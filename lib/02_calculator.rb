@@ -7,7 +7,7 @@ def subtract (a, b)
 end
 
 def sum(array)
-    array.reduce(0, :+)
+    return array.sum
 end
 
 def multiply(a, b)
