@@ -23,15 +23,10 @@ end
 
 def magic_array(arr)
     arr = arr.flatten
-    # Sort the array
-    arr.sort!
-    # Multiply each number by 2
-    arr.map! { |x| x * 2 }
-    # Remove numbers that are multiples of 3
-    arr.reject! { |x| x % 3 == 0 }
-    # Remove duplicate numbers
-    arr.uniq!
-    # Sort the array again
-    arr.sort!
+        arr.sort!
+            arr.map! { |x| x * 2 }
+                arr.reject! { |x| x % 3 == 0 }
+                    arr.uniq!
+                        arr.sort!
     return arr
 end
